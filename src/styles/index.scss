@@ -1,0 +1,27 @@
+@import "./variebles.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@100;400;700&display=swap");
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  color: $text-color;
+  font-family: $body-font;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// .responsiveContainer {
+//   max-width: 300px;
+//   margin: 0 auto;
+// }
+// @include breakpoint-small {
+//   .responsiveContainer {
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//     max-width: fit-content;
+//     display: flex;
+//     justify-content: flex-start;
+//     column-gap: 1rem;
+//   }
+//}

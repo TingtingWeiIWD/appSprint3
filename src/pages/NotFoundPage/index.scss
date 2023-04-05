@@ -1,0 +1,43 @@
+@import "../../styles/variebles.scss";
+div.not-found {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  h2 {
+    font-family: $title-font;
+    margin-bottom: 0;
+  }
+  .p-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: xx-large;
+    font-weight: 100;
+  }
+  img {
+    width: 50%;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 2px 10px rgb(88, 87, 87);
+  }
+  ul {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    column-gap: 0.5rem;
+    li {
+      list-style: none;
+      line-height: 2rem;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        padding: 0.1rem 0.3rem;
+        background-color: rgba(143, 0, 187, 0.347);
+        border-radius: 5px;
+        color: black;
+      }
+    }
+  }
+}

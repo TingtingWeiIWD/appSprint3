@@ -1,0 +1,32 @@
+@import "../../styles/variebles.scss";
+
+header.header-component {
+  display: flex;
+  flex-direction: column;
+
+  background: rgb(255, 91, 116);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 91, 116, 0.7215007215007214) 0%,
+    rgba(139, 14, 139, 0.4992784992784993) 100%
+  );
+  color: white;
+  div.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    h1 {
+      font-family: $title-font;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-size: large;
+      svg {
+        margin-right: 10px;
+        font-size: 40px;
+      }
+    }
+  }
+}

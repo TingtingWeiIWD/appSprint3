@@ -1,0 +1,87 @@
+@import "../../../styles/variebles.scss";
+
+div.task {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint-xsmall {
+    width: 43%;
+  }
+  @include breakpoint-large {
+    width: 400px;
+  }
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 5px 9px -9px rgba(68, 68, 68, 0.58);
+  &:hover {
+    background-color: #ffffff5f;
+  }
+  div.statusContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    //font-size: small;
+  }
+  span {
+    font-weight: bold;
+    &.Open {
+      color: teal;
+      //color: GoldenRod;
+    }
+    &.Done {
+      // color: Teal;
+      &::after {
+        content: " √";
+      }
+    }
+    &.Pending {
+      color: GoldenRod;
+      //color: maroon;
+    }
+  }
+  h3 {
+    cursor: pointer;
+    font-size: xx-large;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    &.completed-yes {
+      color: $primary-color;
+      text-decoration: line-through;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  .id {
+    font-weight: 100;
+    font-size: 10px;
+    //margin-left: 2rem;
+  }
+
+  button {
+    cursor: pointer;
+    //margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: $body-font;
+    font-size: small;
+    svg {
+      margin-right: 5px;
+    }
+
+    &.remove {
+      background-color: lightgrey;
+      margin-top: 2rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+    }
+  }
+}

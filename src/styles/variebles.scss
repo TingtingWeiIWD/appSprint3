@@ -1,0 +1,36 @@
+$title-font: "Abril Fatface", cursive;
+$body-font: "Barlow Condensed", sans-serif;
+
+$primary-color: #ff5b74;
+$secondary-color: #d6a1ff;
+$purple-color: #8b0e8b;
+$background-color: #f2f7fb;
+$border-color: #cddae5;
+
+$text-color: #34343a;
+$success-color: #0dc729;
+$danger-color: #cd2424;
+
+@mixin breakpoint($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-small {
+  @include breakpoint(750px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-xsmall {
+  @include breakpoint(635px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-large {
+  @include breakpoint(1387px) {
+    @content;
+  }
+}
