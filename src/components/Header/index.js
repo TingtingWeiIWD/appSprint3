@@ -10,7 +10,7 @@ export default function Header() {
           <TbChecklist />
           To Do App
         </h1>
-        <span>By Tingting Wei</span>
+        <span>By Group 12</span>
       </div>
       <MainMenu />
     </header>
