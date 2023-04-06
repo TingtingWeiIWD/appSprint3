@@ -27,11 +27,11 @@ export default function Form() {
       // Add task to database
       const addedId = await database.addTask({
         description,
-
         status,
+        createdAt: new Date(), // adding createdAt with a default value
       });
       // Add task to Redux
-      dispatch(addTask({ id: addedId, description, status }));
+      dispatch(addTask({ id: addedId, description, status, createdAt: new Date() }));
 
       // clear input fields
       setDescription("");

@@ -21,7 +21,10 @@ function App() {
   useEffect(() => {
     (async () => {
       const tasks = await database.loadTasks();
-      dispatch(setTask(tasks));
+      const sortedTasks = tasks.docs.map((doc) => ({ ...doc.data(), id: doc.id })).sort((b, a) => {
+      return a.createdAt - b.createdAt;
+      });
+      dispatch(setTask(sortedTasks));
     })();
   }, []);
 
